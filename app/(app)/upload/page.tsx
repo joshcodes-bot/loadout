@@ -210,7 +210,7 @@ export default function UploadPage() {
     router.push('/program')
   }
 
-  const uniqueDays = [...new Set(exercises.map(e => e.day))]
+  const uniqueDays = Array.from(new Set(exercises.map(e => e.day)))
 
   return (
     <div className={styles.page}>
