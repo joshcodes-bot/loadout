@@ -185,7 +185,7 @@ export default function UploadPage() {
           program_id: program.id,
           athlete_id: user.id,
           day_label: day,
-          session_type: [...new Set(exs.map(e => e.name.split(' ')[0]))].slice(0, 2).join('/'),
+          session_type: Array.from(new Set(exs.map(e => e.name.split(' ')[0]))).slice(0, 2).join('/'),
         })
         .select()
         .single()
