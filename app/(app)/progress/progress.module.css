@@ -1,0 +1,39 @@
+.page { padding: 32px; }
+.topbar { margin-bottom: 32px; }
+.title { font-family: var(--display); font-size: 38px; letter-spacing: 2px; line-height: 1; }
+.sub { font-size: 12px; color: var(--grey); font-family: var(--mono); margin-top: 4px; }
+
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+
+.chartCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 22px;
+}
+.chartTitle { font-size: 11px; font-family: var(--mono); color: var(--grey); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; }
+.chartMain {
+  font-family: var(--display);
+  font-size: 42px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.gain { font-size: 18px; font-family: var(--mono); }
+.gainPos { color: var(--green); }
+.gainNeg { color: var(--red); }
+
+.bars { display: flex; align-items: flex-end; gap: 6px; height: 90px; }
+.barWrap { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 4px; height: 100%; }
+.bar { width: 100%; background: var(--surface3); border-radius: 3px 3px 0 0; transition: background 0.15s; }
+.bar:hover { background: var(--red-dim); }
+.barCurrent { background: var(--red) !important; }
+.barLabel { font-size: 9px; font-family: var(--mono); color: var(--grey2); }
+
+.chartMeta { font-size: 11px; font-family: var(--mono); color: var(--grey2); margin-top: 10px; }
+
+.empty { text-align: center; padding: 80px 40px; color: var(--grey); display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.emptyIcon { font-size: 48px; }
+.emptyTitle { font-family: var(--display); font-size: 28px; letter-spacing: 2px; color: var(--white); }
