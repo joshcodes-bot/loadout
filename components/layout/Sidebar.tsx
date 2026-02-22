@@ -54,7 +54,7 @@ export default function Sidebar({ profile }: { profile: Profile }) {
           >
             <span className={styles.icon}>{item.icon}</span>
             {item.label}
-            {'badge' in item && item.badge && <span className={styles.badge}>{item.badge}</span>}
+            {'badge' in item && (item as any).badge && <span className={styles.badge}>{(item as any).badge}</span>}
           </Link>
         ))}
       </nav>
